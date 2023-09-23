@@ -1,0 +1,274 @@
+@media screen and (max-width: 768px) {
+    .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999999999;
+            width: 100%;
+            height: 100%;
+            background-color: #FFF;
+            transform: translateX(100%);
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        .mobile-menu.is-open {
+            transform: translateX(0%);
+        }
+    
+        .mobile-menu-close-btn {
+            border-radius: 50%;
+            background-color: transparent;
+            border: 1px solid #E7E9FC;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 7px;
+            position: absolute;
+            top: 24px;
+            right: 24px;
+        }
+    
+        .mobile-menu-close-btn:hover,
+        .mobile-menu-close-btn:focus+.mobile-menu-close-btn {
+            background-color: #404BBF;
+            fill: #fff;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        .menu-mobile-list {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.1em;
+            letter-spacing: 0.02;
+            padding-top: 72px;
+        }
+    
+        .menu-mobile-point:not(:last-child) {
+            margin-bottom: 40px
+        }
+
+        .mobile-btn-burger {
+            border: none;
+            background-color: transparent;
+            line-height: 0;
+            padding: 0;
+        }
+
+        .mobile-link-address {
+            color: #434455;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.2em;
+            letter-spacing: 0.02;
+            font-style: normal;
+        }
+        
+        .mobile-link-address:focus {
+            color: #4D5AE5;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .mobile-nav-menu-list {
+            padding-bottom: 168px;
+        }
+
+        .menu-list-link {
+            color: #2E2F42;
+        }
+    
+        .menu-list-link:focus {
+            color: #404BBF;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        .address-mobile-links:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    
+        .mobile-menu-address {
+            padding-bottom: 48px;
+        }
+    
+        .mobile-social-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background-color: #4D5AE5;
+            border-radius: 50%;
+            fill: #F4F4FD;
+        }
+    
+        .mobile-social-list:hover {
+            background-color: #404BBF;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        .mobile-menu-social-lists {
+            display: flex;
+            justify-content: space-between;
+        }
+}
+
+.page-header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    align-items: center;
+    justify-content: center;
+}
+
+.head-page-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headmain {
+    display: none;
+}
+
+.address-list {
+    display: none;
+}
+
+.logoword {
+    color: #2e2f42;
+}
+
+.logotype {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-btn-burger {
+        display: none;
+    }
+
+    .head-page-line {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .logotype {
+        margin-right: 120px;
+    }
+
+    .head-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .headmain {
+        display: flex;
+        gap: 40px;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .headline {
+        display: flex;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        position: relative;
+        color: #2e2f42;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .head-page-line {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .page-header {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        display: flex;
+    }
+
+    .address-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.16;
+        letter-spacing: 0.04em;
+    }
+
+    .info {
+        color: #434455;
+    }
+
+    .nav-studio-btn {
+        color: #404bbf;
+    }
+
+    .nav-studio-btn::after {
+        content: '';
+        height: 4px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: -25px;
+        border-radius: 2px;
+        background-color: #404bbf;
+    }
+
+    .headmain a:focus, .headmain a:hover {
+        color: #404BBF;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .page-header {
+        padding-right: 15px;
+        padding-left: 15px;
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+                0px 1px 1px rgba(46, 47, 66, 0.16),
+                0px 1px 6px rgba(46, 47, 66, 0.08);
+    }
+
+    .head-page-line {
+        display: flex;
+    }
+
+    .headmain {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        gap: 40px;
+        display: flex;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    }
+
+    .address-list {
+        font-style: normal;
+        display: flex;
+        margin-left: auto;
+        flex-direction: row;
+    }
+
+    .info {
+        font-style: normal;
+        font-weight: 400;
+        color: #434455;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    }
+}
