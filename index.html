@@ -319,7 +319,7 @@
                         
                         sizes="(max-width: 767px) 288px, (max-width: 1157px) 356px, (min-width: 1158px) 360px"
 
-                        src="./images/portfolio/banking.jpg" alt="BankApp" width="360">
+                        src="./images/portfolio/banking.jpg" alt="BankApp">
                         <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                             Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
@@ -342,7 +342,7 @@
                     
                     sizes="(max-width: 767px) 288px, (max-width: 1157px) 356px, (min-width: 1158px) 360px"
 
-                    src="./images/portfolio/payment.jpg" alt="Payment" width="360">
+                    src="./images/portfolio/payment.jpg" alt="Payment">
                     <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                         Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
@@ -365,7 +365,7 @@
                     sizes="(max-width: 767px) 288px, (max-width: 1157px) 356px, (min-width: 1158px) 360px"
 
                     src="./images/portfolio/meditation.jpg"
-                    alt="Meditation" width="360">
+                    alt="Meditation">
                     <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                         Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
@@ -388,7 +388,7 @@
                     
                     sizes="(max-width: 767px) 288px, (max-width: 1157px) 356px, (min-width: 1158px) 360px"
 
-                    src="./images/portfolio/taxi.jpg" alt="Taxi" width="360">
+                    src="./images/portfolio/taxi.jpg" alt="Taxi">
                     <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                         Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
@@ -411,7 +411,7 @@
 
                     sizes="(max-width: 767px) 288px, (max-width: 1157px) 356px, (min-width: 1158px) 360px"
 
-                    src="./images/portfolio/screen.jpg" alt="Screen Illustrations" width="360">
+                    src="./images/portfolio/screen.jpg" alt="Screen Illustrations">
                     <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                         Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
@@ -434,7 +434,7 @@
 
                     sizes="(max-width: 767px) 288px, (max-width: 1157px) 356px, (min-width: 1158px) 360px"
                     
-                    src="./images/portfolio/courses.jpg" alt="Some girl" width="360">
+                    src="./images/portfolio/courses.jpg" alt="Some girl">
                     <p class="overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic
                         Fruit Ecommerce App · Cloud Storage App</p>
                     </div>
@@ -569,29 +569,33 @@
     </div>
 
     <!-- MOBILE MENU -->
-    <div class="mobile-menu">
-        <button class="mobile-menu-close-btn">
+    <div class="container mobile-menu">
+        <button class="mobile-menu-close-btn" type="button">
             <svg class="mobile-close-btn-icon" width="8" height="8">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
-        <nav class="mobile-nav-menu-list">
-            <ul class="menu-mobile-list list">
-                <li class="menu-mobile-point">
-                    <a class="menu-list-link link" href="">Studio</a>
-                </li>
-                <li class="menu-mobile-point">
-                    <a class="menu-list-link link" href="">Portfolio</a>
-                </li>
-                <li class="menu-mobile-point">
-                    <a class="menu-list-link link" href="">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-        <address class="mobile-menu-address">
+        <div class="mobile-nav-container">
+            <nav class="mobile-nav-menu-list">
+                <ul class="menu-mobile-list list">
+                    <li class="menu-mobile-point">
+                        <a class="menu-list-link link mobile-studio" href="">Studio</a>
+                    </li>
+                    <li class="menu-mobile-point">
+                        <a class="menu-list-link link" href="">Portfolio</a>
+                    </li>
+                    <li class="menu-mobile-point">
+                        <a class="menu-list-link link" href="">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="social-and-media-mobile-container">
+            <address class="mobile-menu-address">
             <ul class="mobile-address-list list">
                 <li class="address-mobile-links">
-                    <a class="mobile-link-address link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    <a class="mobile-link-address link mobile-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
                 <li class="address-mobile-links">
                     <a class="mobile-link-address link" href="tel:+110001111111">+11 (000) 111-11-11</a>
@@ -624,6 +628,8 @@
                 </svg>
             </li>
         </ul>
+        </div>
+        
     </div>
 </body>
 </html>
